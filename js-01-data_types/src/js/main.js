@@ -48,6 +48,21 @@ console.log("El resultado de " + valor1 + " * " + valor2 + " = " + valor1 * valo
 console.log(`El resultado de ${valor1} * ${valor2} = ${valor1*valor2} pesos.`);
 
 /*
+    Crear una variable con el nombre de la persona que cumple anos.
+    Crear una variable con el regalo que le daras
+
+    Mostrar en consola el mensaje que incluya el nombre de la persona y el regalo
+*/
+
+const cumpleanero = 'Jen';
+const regalo = 'Trocona';
+
+function felicitarCumpleanos (nombre,regalo) {
+console.log(`Es cumpleanos de ${nombre} y mi regalo es ${regalo}`);
+}
+felicitarCumpleanos(cumpleanero, regalo);
+
+/*
  Tipos de datos number.
 
  - números positivos: 100, 1, 0.258
@@ -68,6 +83,29 @@ console.log( typeof ( 3 + "Viernes temático" ) ); // 'string'
 console.log( typeof ( "3Viernes temático" ) ); // 'string'
 console.log( 4 / 0 ); // +Infinity
 
+/* Comprueba si las siguientes variables son del tipo number*/
+const num1 = 42;
+/* Comprueba si las siguientes variables son del tipo string*/
+const nameCh54 = "Luis";
+let variable;
+
+function comprobacionNumber(variable){
+  if (typeof(variable) === "number"){
+    return `El dato ${variable} es un number`;
+  } else {false}
+}
+
+function comprobacionString(variable){
+  if (typeof(variable) === "string"){
+    return `El dato ${variable} es un string`;
+  } else {false}
+}
+
+console.log(typeof(num1));
+console.log(typeof(nameCh54));
+
+console.log(comprobacionNumber(num1));
+console.log(comprobacionString(nameCh54));
 
 /*
  Cuando se realizan operaciones que exceden los límites
@@ -165,7 +203,7 @@ console.log(`Mi mascota tiene ${ edadMascota } años`);
 console.log( String( true ) ); // "true"
 console.log( String( null ) ); // 
 console.log( String( undefined ) ); // "undefined"
-console.log( String( [] ) ); // empty Array-> ""
+console.log( String( [] ) ); // empty string -> ""
 console.log( String( [2,3,4,5,null,3] ) ); // "2,3,4,5,,3"
 console.log( String( {} ) ); // [object Object]
 console.log( String( {name:"Serch", active:true} ) ); // [object Object]
